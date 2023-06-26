@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet"></link>
+    <style>
+        @media (max-width:600px){        /* 501px이상 600px 이하에서 반응*/
+            body{                        /* 아래 500px이하와 겹칠수 있으나 아래 작성된게*/
+                background-color: green; /* 우선순위이므로 501~600px로 반응한다.*/
+            }
+        }
+        @media (max-width:500px){        /* 500px 이하에서 반응*/
+            body{                        
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){       /* 601px 이상에서 반응*/
+            body{
+                background-color: blue;
+            }
+        }
+        .firstBox{
+            /* width: 300px; */
+            /* height: 300px; */
+            /* border: 1px solid blue; */
+            
+        }
+        .child{
+            background-color: powderblue;
+            width: 100px;
+            height: 300px;
+            float: left;
+        }
+        
+        .secondBox{
+            width: 300px;
+            height: 50px;
+            margin-top: 50px;
+            background-color: orangered;
+            clear: both;
+        }
+        .clear{
+            /* clear: both; */
+        }
+    </style>
+    <title>css practice</title>
+</head>
+<body>
+    <div class="firstBox">
+        <div class="child"></div>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla, dolores voluptates laboriosam molestias impedit beatae debitis, asperiores, necessitatibus quam voluptatum facere repellendus totam temporibus blanditiis eius animi quasi cumque.</p>
+        
+    </div>
+    <!-- <div class="clear"></div> -->
+    <div class="secondBox"></div>
+</body>
+</html>
