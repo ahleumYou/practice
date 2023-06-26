@@ -56,3 +56,81 @@ h2 {
     line-height: 20px;
     font-size: 14px;
 }
+.spanContainer span{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background: beige;
+
+}
+.spanContainer div{
+    width: 500px;
+    height: 500px;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.spanContainer label{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* 모션 차이 test */
+
+/* .motionContainer{
+    position: relative;
+    height: 500px;
+}
+
+.motionBox1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    transition: all 1s ease ;
+}
+.motionBox1:hover{
+    width: 300px;
+    height: 300px;
+}
+.motionBox2{
+    transform: translate();
+}
+.motionBox2:hover{
+    width: 300px;
+    height: 300px;
+} */
+
+.motionbox1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 1s ease;
+}
+
+.motionbox1:hover {
+    top: 50px;
+    left: 50px;
+}
+
+.motionbox2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition:all 1s;
+}
+
+.motionbox2:hover {
+    transform: translate(50px, 50px);
+}
