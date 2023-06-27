@@ -12,24 +12,33 @@
 <body>
     <div class="container">
         <h2>div 태그의 중앙정렬</h2>
-        <div class="box box1">
-            div 중앙정렬 1<br><br>
-            margin : auto ;<br>
-            width 값 필요 <br>
+        <div class="wraper wraper1">
+            <div class="box box1">
+                div 가로 중앙정렬 1<br><br>
+                margin : auto ;<br>
+                width 값 필요 <br>
+            </div>
         </div>
-        <div class="box box2">
-            div 중앙정렬 2<br><br>
-            position: absolute;<br>
-            left: 50%;<br>
-            margin-left: -100px;<br>
+        <div class="wraper wraper2">
+            <div class="box box2">
+                div 중앙정렬 2<br><br>
+                position: absolute;<br>
+                left: 50%;<br>
+                top: 50%;<br>
+                margin-left: -150px;<br>
+                margin-top: -100px;
+            </div>
         </div>
-        <div class="box box3">
-            div 중앙정렬 3<br><br>
-            position: absolute;<br>
-            left: 50%;<br>
-            trasform:translate(-50%,0)<br>
+        <div class="wraper wraper3">
+            <div class="box box3">
+                div 중앙정렬 3<br><br>
+                position: absolute / relative;<br>
+                left: 50%;<br>
+                top: 50%;<br>
+                trasform:translate(-50%,-50%)<br>
+            </div>
         </div>
-        <div class="box4">
+        <div class="wraper wraper4">
             <div class="flexBox">
                 div 중앙정렬 4<br><br>
                 display: flex;<br>
@@ -40,13 +49,36 @@
     </div>
     <div class="spanContainer">
         <h2>span , text 중앙정렬</h2>
+        <br><br>
+
+        span태그 -> display: inline-block;<br>
+        text-align: center;<br>
         <span class="text1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At obcaecati, eligendi provident
             accusamus aperiam ducimus doloremque similique expedita vel autem inventore totam quos asperiores dicta
             earum ipsa dolore impedit ipsam.</span>
         <br>
+        <br>
+        <br>
+
+
+        position:absolute -> block요소로 변환됨<br>
+        left: 50%;<br>
+        top: 50%;<br>
+        transform: translate(-50%, -50%);<br>
         <div>
             <label for="name">label</label>
-            <input name="name" type="text">
+            <!-- <input name="name" type="text"> -->
+        </div>
+        <br>
+        <br>
+        text-align: center;<br>
+        vertical-align: middle; -> 안먹힘<br>
+        line-height: 300px;<br>
+        <div>
+            <span>text </span>
+            <span>text </span>
+            <span>text </span>
+
         </div>
     </div>
 

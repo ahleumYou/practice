@@ -1,83 +1,104 @@
 @import "reset.css";
 
-.container{
-    position: relative;
+.container {
+  position: relative;
 }
 h2 {
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
-    font-size: 30px;
-    background-color: orange;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: orange;
 }
-.box{
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 10px;
+.wraper {
+  height: 500px;
+}
+.wraper1 {
+  background-color: black;
+}
+.wraper2 {
+  position: relative;
+}
+.wraper3 {
+  background-color: black;
+  position: relative;
+}
+.wraper4 {
+}
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* margin-top: 10px; */
 }
 .box1 {
-    margin:10px auto ;
-    background-color: powderblue;
+  margin: auto;
+  background-color: powderblue;
 }
-.box2{
-    background-color: green;
-    position: relative;
-    left: 50%;
-    margin-left: -150px;
+.box2 {
+  background-color: green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -100px;
 }
-.box3{
-    
-    position: relative;
-    left: 50%;
-    transform:translate(-50%,0);
-    background-color: yellowgreen;
+.box3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellowgreen;
 }
-.box4{
-    margin-top: 10px;
-    height: 300px;
-    display: flex;
-    background-color: aliceblue;
-    justify-content: center;
-    align-items: center;
+.wraper4 {
+  margin-top: 10px;
+  height: 500px;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
 }
-.flexBox{
-    box-sizing: border-box;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
-    background-color: skyblue;
+.flexBox {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  background-color: skyblue;
 }
 
 /* span 중앙정렬 */
 
-.text1{
-    line-height: 20px;
-    font-size: 14px;
+.text1 {
+  line-height: 20px;
+  font-size: 14px;
 }
-.spanContainer span{
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    background: beige;
-
+.spanContainer span.text1 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background: beige;
 }
-.spanContainer div{
-    width: 500px;
-    height: 500px;
-    background-color: blanchedalmond;
-    position: relative;
+.spanContainer div {
+  width: 300px;
+  height: 300px;
+  background-color: blanchedalmond;
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
 }
-.spanContainer label{
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.spanContainer label {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-
-
+.spanContainer div span {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+}
 
 
 /* 모션 차이 test */
